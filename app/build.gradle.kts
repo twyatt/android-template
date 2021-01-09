@@ -8,14 +8,15 @@ kotlin {
     sourceSets {
         val main by getting {
             dependencies {
-                implementation(kotlinx.serialization("json"))
+                implementation(kotlinx("serialization-json"))
+                implementation(kotlinx("coroutines-core"))
                 implementation(material())
-                implementation(androidx.appcompat())
-                implementation(androidx.constraintlayout())
-                implementation(androidx.recyclerview())
-                implementation(androidx.lifecycle("viewmodel-ktx"))
-                implementation(androidx.lifecycle("livedata-ktx"))
-                implementation(androidx.activity("activity-ktx"))
+                implementation(androidx("appcompat"))
+                implementation(androidx("constraintlayout"))
+                implementation(androidx("recyclerview"))
+                implementation(androidx("lifecycle-viewmodel-ktx"))
+                implementation(androidx("lifecycle-livedata-ktx"))
+                implementation(androidx("activity-ktx"))
             }
         }
     }
